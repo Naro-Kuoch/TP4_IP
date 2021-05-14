@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div>
+    <h1>I'm root components</h1>
+      <!-- <hexagone></hexagone>
+      <triangle></triangle>
+      <star></star>
+      <diamond></diamond>
+      <heart></heart> -->
+
+      <shape name="star"></shape>
+      <shape name="hexagone"></shape>
+      <shape name="diamond"></shape>
+      <shape name="triangle"></shape>
+      
+
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Shape from './components/Shape.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Shape
   }
 }
 </script>
+    
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  background-color: rgb(0, 162, 255);
+  border: 2px solid black;
+  padding: 200px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ 
+
 }
+
+
 </style>
